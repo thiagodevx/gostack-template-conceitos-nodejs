@@ -55,7 +55,6 @@ app.post('/repositories/:id/like', (request, response) => {
   }
   const repository = repositories[index]
   repository.likes++
-  console.log(repository.like)
   response.json(repository)
 })
 
